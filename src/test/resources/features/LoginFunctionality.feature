@@ -1,5 +1,5 @@
 @regression @ui
-Feature: Users with valid credentials should be allowed to login.
+Feature: Users with valid credentials should be allowed to login
 
 
   Scenario: Valid Active User Account

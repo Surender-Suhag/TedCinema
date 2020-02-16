@@ -1,4 +1,4 @@
-Feature: Ted card users are given special discounts on ticket bookings.
+Feature: Ted card users are given special discounts on ticket bookings
 
       #Assuming ticket price is x.
 
