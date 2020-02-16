@@ -22,15 +22,15 @@ Feature: Payment for the tickets online by credit card
       | 5200828282828210 | 983       | "Payment is successful" | booked     |
       #For american express credit card
       | 378282246310005  | 983       | "Payment is successful" | booked     |
-
+    Examples: Insufficient balance in card
+      | cardNumber       | cvcNumber | message                 | seatStatus |
+      | 4242424242424242 | 983       | "Payment is successful" | available  |
     Examples: Invalid card Numbers. Seat is not booked
-
       | cardNumber  | cvcNumber | message                                  | seatStatus |
       #For Visa credit card
       | 1231211     | 893       | "Invalid card details. Please try again" | available  |
       #For mastercard credit card
       | 40000123411 | 893       | "Invalid card details. Please try again" | available  |
-
     Examples: Invalid CVC. Seat is not booked
       | cardNumber       | cvcNumber | message                            | seatStatus |
       #For Visa credit card
@@ -43,7 +43,6 @@ Feature: Payment for the tickets online by credit card
       | 5200828282828210 | 123       | "Payment Failed. Please try again" | available  |
       #For american express credit card
       | 378282246310005  | 123       | "Payment Failed. Please try again" | available  |
-
     Examples: Expired Credit cards. Seat is not booked
       | cardNumber       | cvcNumber | message                            | seatStatus |
       | 4000000000000068 | 123       | "Payment Failed. Please try again" | available  |
