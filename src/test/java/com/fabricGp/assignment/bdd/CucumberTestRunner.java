@@ -15,9 +15,6 @@ import org.junit.runner.RunWith;
         },
         plugin = {
                 "pretty",
-        },
-        tags = {
-                "@singleTest"
         }
 )
 public class CucumberTestRunner {
