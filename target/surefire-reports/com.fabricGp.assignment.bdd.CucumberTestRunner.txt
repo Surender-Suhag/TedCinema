@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.fabricGp.assignment.bdd.CucumberTestRunner
+-------------------------------------------------------------------------------
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 15, Time elapsed: 5.932 s - in com.fabricGp.assignment.bdd.CucumberTestRunner

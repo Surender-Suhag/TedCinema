@@ -34,4 +34,3 @@ Feature: Payment for the tickets online by credit card
     Examples: Expired Credit cards
       |Visa             |4000000000000068|123      |"Payment Failed. Please try again"|
       |Visa Debit       |4000000000000069|123      |"Payment Failed. Please try again"|
-      
