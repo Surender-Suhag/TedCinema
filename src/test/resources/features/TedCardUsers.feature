@@ -2,6 +2,10 @@ Feature: Ted card users are given special discounts on ticket bookings.
 
       #Assuming ticket price is x.
 
+  @singleTest
+    Scenario: Single Test with one step
+    Given  first step
+
   Scenario Outline: Active Ted card user books ticket
     Given Ted user is logged in
     And  past booked ticket count  is <PastAccumulatedTickets>

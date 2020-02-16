@@ -14,7 +14,10 @@ import org.junit.runner.RunWith;
                "com.fabricGp.assignment.bdd.stepdefs"
         },
         plugin = {
-                "pretty"
+                "pretty",
+        },
+        tags = {
+                "@singleTest"
         }
 )
 public class CucumberTestRunner {

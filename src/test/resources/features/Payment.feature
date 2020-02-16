@@ -2,13 +2,13 @@ Feature: Payment for the tickets online by credit card
         Only Visa, mastercard and american express credit cards are supported
 
   Scenario Outline: Making payment online using credit/debit card
-    Given User has booked a seat
-    And i am checkout
-    When I use <cardType>
-    And i enter <cardNumber>
+    Given User have selected a seat in row 1 and column 2 for a show
+    And i click on "make payment"
+    When i enter <cardNumber>
     And i enter <cvcNumber>
+    And i make payment
     Then "message" should be displayed
-
+    And seat in row 1 and column 1 should be booked
     Examples: Valid cards and valid cvc numbers
     |cardType         |cardNumber      |cvcNumber|message|
     |Visa             |4242424242424242|983      |"Payment is successful"|
@@ -34,3 +34,12 @@ Feature: Payment for the tickets online by credit card
     Examples: Expired Credit cards
       |Visa             |4000000000000068|123      |"Payment Failed. Please try again"|
       |Visa Debit       |4000000000000069|123      |"Payment Failed. Please try again"|
+
+    Scenario: Credit cards should not be saved
+      Given User have selected a seat a show
+      And i click on "make payment"
+      When i enter <cardNumber>
+      And i enter <cvcNumber>
+      And i make payment
+      And i check cookies
+      Then credit card details should not get saved in cookies
