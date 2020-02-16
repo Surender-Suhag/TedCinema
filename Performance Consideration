@@ -1,0 +1,17 @@
+This document outlines performance criteria for Ted Cinema application
+
+BASE_USER=50
+
+1. Stress test movie details page with
+   User Pool = BASE_USER
+   Response Time = no more than 2 seconds
+   Test Execution Duration = 24 hours
+   Memory Usage = no more than 4 GB
+   Garbage Collection = no more than 10 cycles
+   
+2. Stress test seat booking page with
+   User Pool = BASE_USER/2
+   Response Time = no more than 2 seconds
+   Test Execution Duration = 24 hours
+   Memory Usage = no more than 4 GB
+   Garbage Collection = no more than 10 cycles
