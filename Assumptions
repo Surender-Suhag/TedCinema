@@ -1,0 +1,7 @@
+1	On Super Tuesday, for Ted user, if it’s the 5th ticket, then the ticket is free and it's not on 50% discount
+2	On Super Tuesday, for Ted user the discount is 50% and 10% is not applicable
+3	There is no limit on the number of tickets booked by a single user
+4	Same user is not allowed to login from two IPs
+5	A seat gets locked if a user has selected the seat and moved on to checkout. If payment failed, seat should be available again
+6	Supported Browsers - Chrome, Firefox, Safari, Edge, IE11
+7	Password is encripted and token is returned. User is logged out after 10 minutes

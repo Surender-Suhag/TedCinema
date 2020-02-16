@@ -35,6 +35,7 @@ Feature: Payment for the tickets online by credit card
       |Visa             |4000000000000068|123      |"Payment Failed. Please try again"|
       |Visa Debit       |4000000000000069|123      |"Payment Failed. Please try again"|
 
+    
     Scenario: Credit cards should not be saved
       Given User have selected a seat a show
       And i click on "make payment"

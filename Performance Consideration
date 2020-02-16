@@ -15,3 +15,11 @@ BASE_USER=50
    Test Execution Duration = 24 hours
    Memory Usage = no more than 4 GB
    Garbage Collection = no more than 10 cycles
+
+3.  Load test movie details page with
+    User pool = 2*BASE_USER
+    Response Time = no more than 5 seconds
+    Test Execution Duration = 1 hour
+    Memory Usage = no more than 6 GB
+    Garbage Collection = no more than 15 cycles
+
